@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disclaimer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="disclaimer-box">
+        <h1>Disclaimer</h1>
+        <p>
+          We would like to inform all users that we are not responsible for any
+          misuse, irresponsible actions, or failure to exercise proper judgment.
+          We strongly encourage you not to use these tools or exploits during
+          school hours. They are intended for personal use outside of these
+          settings. If you are caught using these services irresponsibly, the
+          consequences are your own responsibility.
+        </p>
+        <button id="proceed-button">
+          I am aware of and agree to the terms
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("proceed-button")
+        .addEventListener("click", function () {
+          window.location.href = "home.html";
+        });
+    </script>
+  </body>
+</html>
