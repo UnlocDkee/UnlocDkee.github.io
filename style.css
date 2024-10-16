@@ -1,0 +1,153 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh; /* Ensure the body takes full height */
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Arrange children vertically */
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%; /* Stretch the nav bar across the full screen */
+  position: fixed; /* Keep the nav bar at the top while scrolling */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points from nav */
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center;
+  max-width: 1200px; /* Limit the content width inside the full-width nav */
+}
+
+nav ul li {
+  margin: 0; /* Remove margin to avoid extra space */
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #1abc9c;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Remove bullet points from all unordered lists */
+ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Disclaimer Box */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eaeaea;
+}
+
+.disclaimer-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+.disclaimer-box h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.disclaimer-box p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Main content styling */
+.home-content {
+  padding: 60px; /* Increased padding around the box */
+  text-align: center;
+  max-width: 900px; /* Increased max-width for the box */
+  margin: auto; /* Center the content */
+  background-color: white;
+  border-radius: 15px; /* Rounded corners for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered title styling */
+.home-content h1 {
+  font-size: 3.5rem; /* Increased font size for the title */
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Centered paragraph styling */
+.home-content p {
+  font-size: 1.3rem; /* Increased font size for the paragraph */
+  font-weight: 300;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Footer styling with full-width */
+footer {
+  width: 100%; /* Stretch footer across the full screen */
+  background-color: #333;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed; /* Keep the footer at the bottom */
+  bottom: 0;
+  left: 0;
+  border-radius: 0; /* Remove rounded corners */
+}
+
+/* Button hover effect */
+button:hover,
+a:hover {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
